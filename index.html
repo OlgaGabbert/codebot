@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Random Jokes</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id='navbar'>
+        <a href="index.html" id='index'>Home</a>
+        <a href="#jokes" id='nav-jokes'>Get Dad Jokes</a>
+        <a href="#chuckNorrisJokes" id='nav-jokes'>Get Chuck Norris Jokes</a>
+        <a href="#manateeJokes" id='nav-jokes'>Get Manatee Jokes</a>
+    </nav>
+
+    <section id='header'>
+        <article>
+            <h2>Let's laugh about jokes from three joke categories!</h2>
+              <form id="myForm">
+                <label for="textInput" id='bot'>Type Chuck Norris, Dad or Manatee to choose a category:</label>
+                <input type="text" id="textInput" name="text">
+                <button type="submit" id='submit-button'>Submit</button>
+              </form>
+        </article>
+    </section>
+
+    <div id='content'>
+        <section id='jokes'>
+            <article>
+                <div class="getRandomJokes">
+                    <h2>Get Dad Jokes</h2>
+                    <div id="getJoke">
+                        <button id="fetch-random" onclick='fetchRandomJoke()'>Get another Dad Joke</button>
+                    </div>
+                </div>
+
+                <div class='randomJoke'>
+                    <div id="joke-container">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id='chuckNorrisJokes'>
+            <article>
+                <div class="getRandomJokes">
+                    <h2>Get Chuck Norris Jokes</h2>
+                    <div id="getJoke">
+                        <button id="fetch-random" onclick='fetchChuckNorrisJoke()'>Get another Chuck Norris Joke</button>
+                    </div>
+                </div>
+
+                <div class='randomJoke'>
+                    <div id="chuck-joke-container">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id='manateeJokes'>
+            <article>
+                <div class="getRandomJokes">
+                    <h2>Get Manatee Jokes</h2>
+                    <div id="getJoke">
+                        <button id="fetch-random" onclick='fetchManateeJoke()'>Get another Manatee Joke</button>
+                    </div>
+                </div>
+
+                <div class='randomJoke'>
+                    <div id="manatee-container">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

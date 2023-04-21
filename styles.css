@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
+ 
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+}
+
+button {
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-color: #4681f4;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #5798fa;
+    transition: background-color 0.2s;
+  }
+
+  section {
+    min-height: 100vh;
+  }
+  
+  #header {  
+    background: rgb(123,134,232);
+    background: linear-gradient(164deg, rgba(123,134,232,1) 0%, rgba(246,140,255,1) 52%, rgba(255,222,50,1) 100%);
+    color: #270942;
+  }
+  
+
+  #jokes {
+    background: rgb(90, 183, 206);
+    background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+    color: #0f2852;
+  }
+
+  #chuckNorrisJokes {
+    background: rgb(90, 183, 206);
+    background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+    color: #0f2852;
+  }
+  
+  article {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0px auto;
+  }
+  
+  h2 {
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    font-size: 3em;
+  }
+
+  #navbar {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    box-sizing: border-box;
+    height: 45px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+  }
+
+  #navbar.sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  .navbarOffsetMargin {
+    padding-top: 45px;
+  }
+
+  article {
+    display: block;
+    margin: auto;
+    width: 600px;
+    text-align: center;
+  }
+
+  #getJoke {
+    margin: 20px;
+  }
+
+  #word {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .randomJokeCard {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .cardHeader {
+    background-color: #4681f4;
+    color: white;
+  }
+
+  .searchButton {
+    background-color: #673147;
+    color: white;
+    margin-left: 5px;
+  }
+
+  .searchButton:hover {
+    background-color: #301934;
+    transition: background-color 0.2s;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  label, input {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
