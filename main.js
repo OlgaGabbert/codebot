@@ -2,6 +2,7 @@ const randomJoke = document.getElementById('joke-container');
 const randomChuckNorrisJoke = document.getElementById('chuck-joke-container');
 const randomManateeJoke = document.getElementById('manatee-container');
 
+// call Dad Jokes API 
 async function fetchRandomJoke() {
     try {
         const response = await fetch("https://icanhazdadjoke.com", {
@@ -26,6 +27,7 @@ async function fetchRandomJoke() {
     }
 }
 
+// call Chuck Norris API
 async function fetchChuckNorrisJoke() {
     try {
         const response = await fetch(
@@ -54,6 +56,7 @@ async function fetchChuckNorrisJoke() {
     }
 }
 
+// call Manatee Jokes API
 async function fetchManateeJoke() {
     try {
         const response = await fetch(
@@ -82,21 +85,7 @@ async function fetchManateeJoke() {
     }
 }
 
-const navJokes = document.getElementById('nav-jokes');
-const navbar = document.getElementById('navbar');
-const header = document.getElementById('header');
-const navbarOffset = navbar.offsetTop;
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset >= navbarOffset) {
-        navbar.classList.add('sticky');
-        header.classList.add('navbarOffsetMargin');
-    } else {
-        navbar.classList.remove('sticky');
-        header.classList.remove('navbarOffsetMargin');
-    }
-});
-
+// Call for API depending on user input in the form provided 
 const myForm = document.getElementById('myForm');
 const textInput = document.getElementById('textInput');
 const myBot = document.getElementById('bot');
@@ -124,3 +113,18 @@ myForm.addEventListener('submit', async (e) => {
     }
 });
 
+// Stick the navbar to the top if the user scrolls down and unstick if the user scrolls up
+const navJokes = document.getElementById('nav-jokes');
+const navbar = document.getElementById('navbar');
+const header = document.getElementById('header');
+const navbarOffset = navbar.offsetTop;
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset >= navbarOffset) {
+        navbar.classList.add('sticky');
+        header.classList.add('navbarOffsetMargin');
+    } else {
+        navbar.classList.remove('sticky');
+        header.classList.remove('navbarOffsetMargin');
+    }
+});
