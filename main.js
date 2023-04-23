@@ -2,6 +2,8 @@ const randomJoke = document.getElementById('joke-container');
 const randomChuckNorrisJoke = document.getElementById('chuck-joke-container');
 const randomManateeJoke = document.getElementById('manatee-container');
 
+const apiKey = window.env.API_KEY;;
+
 // call Dad Jokes API 
 async function fetchRandomJoke() {
     try {
@@ -34,7 +36,7 @@ async function fetchChuckNorrisJoke() {
             "https://api.chucknorris.io/jokes/random", {
             headers: {
                 accept: "application/json",
-                "X-RapidAPI-Key": "a15e1b9453msh8dbef8b578a8435p18f2d1jsn10c408920410",
+                "X-RapidAPI-Key": apiKey,
                 "X-RapidAPI-Host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com",
             },
         }
