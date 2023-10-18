@@ -2,7 +2,7 @@ const randomJoke = document.getElementById('joke-container');
 const randomChuckNorrisJoke = document.getElementById('chuck-joke-container');
 const randomManateeJoke = document.getElementById('manatee-container');
 
-const apiKey = window.env.API_KEY;;
+const apiKey = window.env.API_KEY;
 
 // call Dad Jokes API 
 async function fetchRandomJoke() {
